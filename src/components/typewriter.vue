@@ -1,6 +1,7 @@
 <template>
   <div class="">
-    <span class="text-primary" style="font-size: 1.5em;">
+    <span style="font-size: 1.5em; font-family: Raleway, sans-serif">{{title}}</span>
+    <span class="text-primary" style="font-size: 1.5em; font-family: Raleway, sans-serif">
     {{ displayText.join("") }}
     <span class="cursor">|</span>
   </span>

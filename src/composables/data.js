@@ -1,11 +1,10 @@
 export default function setUpProfile() {
-
   // ABOUT DATA
   const aboutData = {
-    paragraphOne: '',
-    paragraphTwo: '',
-    paragraphThree: '',
-  }
+    paragraphOne: "",
+    paragraphTwo: "",
+    paragraphThree: "",
+  };
 
   // SKILLS DATA
 
@@ -55,56 +54,124 @@ export default function setUpProfile() {
       skill: "google earth Engine",
       img: "https://earthengine.google.com/static/images/earth-engine-logo.png",
     },
-  ]
+    {
+      id: 0,
+      skill: "figma",
+      img: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
+    },
+    {
+      id: 0,
+      skill: "AdobeXD",
+      img: "https://upload.wikimedia.org/wikipedia/commons/c/c2/Adobe_XD_CC_icon.svg",
+    },
+    {
+      id: 0,
+      skill: "HTML5",
+      img: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+    },
+    {
+      id: 0,
+      skill: "CSS3",
+      img: "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
+    },
+    {
+      id: 0,
+      skill: "PostgreSQL/Postgis",
+      img: "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg",
+    },
+    {
+      id: 0,
+      skill: "Openlayers",
+      img: "https://upload.wikimedia.org/wikipedia/commons/6/67/OpenLayers_logo.svg",
+    },
+    {
+      id: 0,
+      skill: "GrassGIS",
+      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Grass_GIS.svg/1200px-Grass_GIS.svg.png"
+    }
+  ];
 
   // PROJECTS DATA
   const projectsData = [
     {
       id: 0,
-      img: '',
-      title: 'Agriculture Statistics Dashboard',
-      info: 'Web development',
-      info2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      url: '',
-      repo: '', //if no repo, the button should not show
+      img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1654254851/portfolio/2022-06-03_14-12_htfoh1.png",
+      title: "AgristatsKE",
+      info: "",
+      info2:
+        "Agricultural statistics dashboard that provides the statistical breakdown of crop types at National, county and subcounty level in Kenya. The seasonal croptype maps are based on data produced by the Copernicus4GEOGLAM service of Copernicus Global Land in various countries: ",
+      url: "",
+      repo: "", //if no repo, the button should not show
     },
     {
       id: 1,
-      img: '',
-      title: 'MISLAND NORTH AFRICA',
-      info: 'Remote Sensing',
-      info2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      url: '',
-      repo: '', //if no repo, the button should not show
+      img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1654254599/portfolio/2022-06-03_14-04_xdoipt.png",
+      title: "MISLAND",
+      info: "",
+      info2:
+        "Decision Support System(DSS) utilizing earth observation data to deliver information, promote awareness and, aid in decision making toward realizing Land Degradation Neutrality (LDN) in six OSS North Africa action zone Algeria, Egypt, Libya, Tunisia, Morocco, and Mauritania",
+      url: "",
+      repo: "", //if no repo, the button should not show
     },
     {
       id: 2,
-      img: '',
-      title: 'Planetary Sceince',
-      info: 'Nothing here',
-      info2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      url: '',
-      repo: '', //if no repo, the button should not show
+      img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1654255385/portfolio/2022-06-03_14-22_hruddm.png",
+      title: "Forest Mask Generotor",
+      info: "Nothing here",
+      info2:
+        "This application allows you to generate forest areas based on the NDVI CV method. Users can set thresholds for the tree cover percentage and to rapidly forest cover maps for differet years form 1990 to 2020",
+      url: "",
+      repo: "", //if no repo, the button should not show
     },
-  ]
+    {
+      id: 0,
+      img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1654257445/portfolio/2022-06-03_14-56_fxvxn6.png",
+      title: "SAR Forestmonitor",
+      info: "Web development",
+      info2:
+        "This app allows you to perform change detection on Selected Tropical Forests Using SENTINEL-1 GRD data. Users can set the area of interest, the date ranges for the before and afeter SENTINEL-1 images. The application is designed for advanced users with knowledge in SAR data processing ",
+      url: "",
+      repo: "", //if no repo, the button should not show
+    },
+    {
+      id: 1,
+      img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1654254599/portfolio/2022-06-03_14-04_xdoipt.png",
+      title: "MISLAND",
+      info: "Remote Sensing",
+      info2:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      url: "",
+      repo: "", //if no repo, the button should not show
+    },
+    {
+      id: 2,
+      img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1654255385/portfolio/2022-06-03_14-22_hruddm.png",
+      title: "Planetary Sceince",
+      info: "Nothing here",
+      info2:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      url: "",
+      repo: "", //if no repo, the button should not show
+    },
+  ];
 
   // CONTACT DATA
   const contactData = {
-    cta: '', // call to action text for the contact section
-    btn: '',
-    email: '',
-  }
+    cta: "", // call to action text for the contact section
+    btn: "",
+    email: "",
+  };
 
   // Footer Data
   const footerData = {
     networks: [
       {
         id: 0,
-        name: 'twitter',
-        url: '',
-      }
-    ]
-  }
+        name: "twitter",
+        url: "",
+      },
+    ],
+  };
 
   return {
     aboutData,
@@ -112,5 +179,5 @@ export default function setUpProfile() {
     contactData,
     footerData,
     skillsData,
-  }
+  };
 }

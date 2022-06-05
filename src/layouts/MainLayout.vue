@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header reveal elevated class="header text-grey-9">
+    <q-header elevated class="header text-grey-9">
       <q-toolbar class="tabs-web">
         <div style="width: 10vw"></div>
         <q-toolbar-title>
@@ -14,21 +14,21 @@
         </q-toolbar-title>
 
         <div class="text-black">
-          <q-tabs v-model="tab" no-caps>
-            <q-tab name="Home" label="">
-              <div class="text-content">Home</div>
-            </q-tab>
-            <q-tab name="Home" label="">
-              <div class="text-content">About</div>
-            </q-tab>
-            <q-tab name="Home" label="">
-              <div class="text-content">Projects</div>
-            </q-tab>
-            <q-tab name="Home" label="">
-              <div class="text-content">Contacts</div>
-            </q-tab>
+          <div class="row q-gutter-md">
+            <div name="Home" label="">
+              <div class="text-content"> <a href="#hero"> <div>Home</div></a></div>
+            </div>
+            <div name="About" label="">
+              <div class="text-content"><a href="#about">About</a></div>
+            </div>
+            <div name="Projects" label="">
+              <div class="text-content"><a href="#projects">Projects</a></div>
+            </div>
+            <div name="Contacts" label="">
+              <div class="text-content"> <a href="#contacts">Contacts</a></div>
+            </div>
             <div style="width: 17vw"></div>
-          </q-tabs>
+          </div>
         </div>
       </q-toolbar>
 
@@ -49,7 +49,7 @@
       </q-toolbar>
     </q-header>
 
-    <q-page-container>
+    <q-page-container class="bg-grey-1">
       <router-view />
     </q-page-container>
   </q-layout>
@@ -127,6 +127,29 @@ export default defineComponent({
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Finger+Paint&family=Raleway:wght@200&family=Roboto:ital,wght@0,100;1,100&display=swap");
+
+a:link {
+  color: #212121;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #212121;;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #1976d2;
+  background-color: transparent;
+  text-decoration: underline;
+  text-decoration: none;
+}
+a:active {
+  color: #1976d2;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 
 .header {
   background-color: #0000001f;

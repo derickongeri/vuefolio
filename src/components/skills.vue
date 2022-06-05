@@ -1,14 +1,27 @@
 <template>
-  <div class="text-box q-pa-md row items-center q-gutter-xs">
+
+  <div class="text-box q-pa-md row items-center justify-around q-gutter-xs">
     <div v-for="(skill, key) in skills" :key="key">
-      <div class="row items-center">
-        <div class="col q-pa-sm" style="max-width: 100px">
-          <img :src="skill.img" style="width: 100%" />
+      <div class="col text-center q-px-sm">
+        <div class="row justify-center q-pa-sm">
+          <img :src="skill.img" style="width: 50px;height: 50px;" />
         </div>
-        <div class="col">{{ skill.skill }}</div>
+        <div class="row justify-center">{{ skill.skill }}</div>
       </div>
     </div>
   </div>
+
+  <!-- <div class="text-box q-pa-md row items-center justify-around q-gutter-xs">
+    <div v-for="(skill, key) in skills" :key="key">
+      <div class="col text-center q-px-sm">
+        <div class="row justify-center q-pa-sm">
+          <img :src="skill.img" style="width: 50px" />
+        </div>
+        <div class="row justify-center">{{ skill.skill }}</div>
+      </div>
+    </div>
+  </div> -->
+
 </template>
 
 <script>

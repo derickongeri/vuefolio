@@ -3,7 +3,7 @@
     <div v-for="(project, id) in projects" :key="id">
       <div class="web-card" style="max-width: 20vw">
         <q-card class="my-card">
-          <img src="https://cdn.quasar.dev/img/mountains.jpg" />
+          <img :src="project.img" />
 
           <q-card-section>
             <div class="text-box text-h6">{{ project.title }}</div>
@@ -26,7 +26,7 @@
 
       <div class="mobile-card">
         <q-card class="my-card">
-          <img src="https://cdn.quasar.dev/img/mountains.jpg" />
+          <img :src="project.img" />
 
           <q-card-section>
             <div class="text-box text-h6">{{ project.title }}</div>
