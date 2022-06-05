@@ -64,7 +64,7 @@
       </div>
       <div
         class="row button-float justify-center"
-        style="position: absolute; top: 80vh; left: 48vw"
+        style="position: absolute; top: 85vh; left: 48vw"
       >
         <q-btn flat round color="grey-9" size="24px" icon="mdi-chevron-down" />
       </div>
@@ -224,17 +224,19 @@
         </div>
       </div>
     </div>
-    <div class="skill-section bg-grey-1">
-      <div class="row items-center">
-        <div class="col text-center" style="max-width: 100%">
-          <h1
-            class="text-grey-9 q-my-none q-py-xl"
-            style="font-family: Finger Paint, cursive; font-size: 3em"
-            data-aos="fade-up"
-          >
-            SKILLS
-          </h1>
-
+    <div class="skill-section bg-grey-1 text-center">
+      <h1
+        class="text-grey-9 q-my-none q-py-xl"
+        style="font-family: Finger Paint, cursive; font-size: 3em"
+        data-aos="fade-up"
+      >
+        SKILLS
+      </h1>
+      <div class="row  q-pa-lg">
+        <div class="col-6 text-center q-pa-md">
+          <programmingSkills/>
+        </div>
+        <div class="col-6 text-center q-pa-md">
           <skills data-aos="fade-up"></skills>
         </div>
       </div>
@@ -255,6 +257,23 @@
         </div>
       </div>
     </div>
+
+    <div class="projects-section bg-grey-1" id="projects" style="width: 100vw">
+      <div class="col q-gutter-md q-py-md justify-center">
+        <div class="row justify-center text-center">
+          <h1
+            class="text-grey-9 q-my-none q-py-xl"
+            style="font-family: Finger Paint, cursive; font-size: 3em"
+          >
+            BLOGS & PUBLICATIONS
+          </h1>
+        </div>
+        <div class="q-pa-md" data-aos="fade-up">
+          <blogs />
+        </div>
+      </div>
+    </div>
+
     <div class="contact-section" id="contacts" style="width: 100vw">
       <div class="row justify-center text-center">
         <h1
@@ -347,8 +366,10 @@ export default defineComponent({
   components: {
     typewriter: require("src/components/typewriter.vue").default,
     projects: require("src/components/projects.vue").default,
+    blogs: require("src/components/blogs.vue").default,
     skills: require("src/components/skills.vue").default,
     contactform: require("src/components/contactform.vue").default,
+    programmingSkills: require("src/components/programming.vue").default,
   },
 });
 </script>

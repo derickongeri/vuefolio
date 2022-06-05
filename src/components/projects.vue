@@ -1,7 +1,7 @@
 <template>
   <div class="q-pa-md row items-center justify-center q-gutter-lg">
     <div v-for="(project, id) in projects" :key="id">
-      <div class="web-card" style="max-width: 20vw">
+      <div class="web-card" style="max-width: 25vw">
         <q-card class="my-card">
           <img :src="project.img" />
 

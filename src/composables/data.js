@@ -6,6 +6,30 @@ export default function setUpProfile() {
     paragraphThree: "",
   };
 
+  // PROGRAMMING SKILLS
+  const codingSkills = [
+    {
+      language: "HTML5",
+      level: 95,
+    },
+    {
+      language: "CSS3",
+      level: 87,
+    },
+    {
+      language: "JavaScript",
+      level: 81,
+    },
+    {
+      language: "Python",
+      level: 75,
+    },
+    {
+      language: "NodeJS",
+      level: 35,
+    },
+  ];
+
   // SKILLS DATA
 
   const skillsData = [
@@ -87,8 +111,8 @@ export default function setUpProfile() {
     {
       id: 0,
       skill: "GrassGIS",
-      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Grass_GIS.svg/1200px-Grass_GIS.svg.png"
-    }
+      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Grass_GIS.svg/1200px-Grass_GIS.svg.png",
+    },
   ];
 
   // PROJECTS DATA
@@ -133,25 +157,53 @@ export default function setUpProfile() {
       url: "",
       repo: "", //if no repo, the button should not show
     },
+    // {
+    //   id: 1,
+    //   img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1654254599/portfolio/2022-06-03_14-04_xdoipt.png",
+    //   title: "MISLAND",
+    //   info: "Remote Sensing",
+    //   info2:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    //   url: "",
+    //   repo: "", //if no repo, the button should not show
+    // },
+    // {
+    //   id: 2,
+    //   img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1654255385/portfolio/2022-06-03_14-22_hruddm.png",
+    //   title: "Planetary Sceince",
+    //   info: "Nothing here",
+    //   info2:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    //   url: "",
+    //   repo: "", //if no repo, the button should not show
+    // },
+  ];
+
+  //BLOGS AND POSTS
+  const blogsData = [
     {
-      id: 1,
-      img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1654254599/portfolio/2022-06-03_14-04_xdoipt.png",
-      title: "MISLAND",
-      info: "Remote Sensing",
-      info2:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      url: "",
-      repo: "", //if no repo, the button should not show
+      img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1654421760/portfolio/2022-06-05_12-19_hurd5o.png",
+      title: "Ship detection using Sentinel 1",
+      text: "",
+      url: "https://geodexter.hashnode.dev/after-the-ever-given",
     },
     {
-      id: 2,
-      img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1654255385/portfolio/2022-06-03_14-22_hruddm.png",
-      title: "Planetary Sceince",
-      info: "Nothing here",
-      info2:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1654421760/portfolio/2022-06-05_12-19_hurd5o.png",
+      title: "Sample Title",
+      text: "",
       url: "",
-      repo: "", //if no repo, the button should not show
+    },
+    {
+      img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1654421760/portfolio/2022-06-05_12-19_hurd5o.png",
+      title: "Sample Title",
+      text: "",
+      url: "",
+    },
+    {
+      img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1654421760/portfolio/2022-06-05_12-19_hurd5o.png",
+      title: "Sample Title",
+      text: "",
+      url: "",
     },
   ];
 
@@ -179,5 +231,7 @@ export default function setUpProfile() {
     contactData,
     footerData,
     skillsData,
+    blogsData,
+    codingSkills,
   };
 }

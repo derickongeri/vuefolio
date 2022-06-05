@@ -1,6 +1,6 @@
 <template>
 
-  <div class="text-box q-pa-md row items-center justify-around q-gutter-xs">
+  <div class="text-box q-pa-md row justify-around q-gutter-xl">
     <div v-for="(skill, key) in skills" :key="key">
       <div class="col text-center q-px-sm">
         <div class="row justify-center q-pa-sm">

@@ -3,15 +3,15 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import { defineComponent } from "vue";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default defineComponent({
-  name: 'App',
+  name: "App",
 
   created() {
-    AOS.init()
-  }
-})
+    AOS.init();
+  },
+});
 </script>
