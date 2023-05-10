@@ -521,10 +521,10 @@
               <q-icon size="20px" name="mdi-map-marker" />
               <div>Nairobi</div>
             </div>
-            <div class="row items-center q-gutter-md q-py-sm">
+            <!-- <div class="row items-center q-gutter-md q-py-sm">
               <q-icon size="20px" name="mdi-email" />
               <div>derickongeri@gmail.com</div>
-            </div>
+            </div> -->
             <div class="row items-center q-gutter-md q-py-sm">
               <q-icon size="20px" name="mdi-phone" />
               <div>+254 716 51 99 70</div>
@@ -548,10 +548,10 @@
               <q-icon size="20px" name="mdi-map-marker" />
               <div>Nairobi</div>
             </div>
-            <div class="row items-center q-gutter-md q-py-sm">
+            <!-- <div class="row items-center q-gutter-md q-py-sm">
               <q-icon size="20px" name="mdi-email" />
               <div>derickongeri@gmail.com</div>
-            </div>
+            </div> -->
             <div class="row items-center q-gutter-md q-py-sm">
               <q-icon size="20px" name="mdi-phone" />
               <div>+254 716 51 99 70</div>
