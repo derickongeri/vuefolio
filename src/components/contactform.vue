@@ -1,7 +1,7 @@
 <template>
-  <div class="text-box q-pa-md" style="width: 100%">
+  <div class="text-box q-pa-md">
     <q-form @submit="onSubmit" class="q-gutter-sm">
-      <div class="row justify-evenly">
+      <div class="row justify-evenly q-mb-md">
         <div class="col">
           <q-input
             dense
@@ -9,9 +9,6 @@
             v-model="name"
             label="Your name"
             lazy-rules
-            :rules="[
-              (val) => (val && val.length > 0) || 'Please type something',
-            ]"
           />
         </div>
         <div style="width:12px"></div>
@@ -22,13 +19,10 @@
             v-model="name"
             label="Your email"
             lazy-rules
-            :rules="[
-              (val) => (val && val.length > 0) || 'Please type something',
-            ]"
           />
         </div>
       </div>
-      <div class="row">
+      <div class="row q-mb-md">
         <q-input
           dense
           class="full-width"
@@ -36,10 +30,6 @@
           v-model="name"
           label="Subject"
           lazy-rules
-          :rules="[
-            (val) => (val !== null && val !== '') || 'Please type your age',
-            (val) => (val > 0 && val < 100) || 'Please type a real age',
-          ]"
         />
       </div>
 
@@ -52,10 +42,6 @@
           v-model="name"
           label="Message"
           lazy-rules
-          :rules="[
-            (val) => (val !== null && val !== '') || 'Please type your age',
-            (val) => (val > 0 && val < 100) || 'Please type a real age',
-          ]"
         />
       </div>
 

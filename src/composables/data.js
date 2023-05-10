@@ -1,3 +1,10 @@
+import agristatsPic from "src/assets/agristats.png"
+import mislandNorthAfrica from "src/assets/mislandNorthAfrica.png"
+import forestMask from "src/assets/forestmask.png"
+import sarImg from "src/assets/sar.png"
+import greenpulse from "src/assets/greenpulse.png"
+
+
 export default function setUpProfile() {
   // ABOUT DATA
   const aboutData = {
@@ -8,6 +15,30 @@ export default function setUpProfile() {
 
   // PROGRAMMING SKILLS
   const codingSkills = [
+    {
+      language: "HTML5",
+      level: 0.95,
+    },
+    {
+      language: "CSS3",
+      level: 0.87,
+    },
+    {
+      language: "JavaScript",
+      level: 0.91,
+    },
+    {
+      language: "NodeJS",
+      level: 0.81,
+    },
+    {
+      language: "Python",
+      level: 0.75,
+    },
+  ];
+
+  // PROGRAMMING SKILLS
+  const codingSkillsmobile = [
     {
       language: "HTML5",
       level: 95,
@@ -26,7 +57,7 @@ export default function setUpProfile() {
     },
     {
       language: "NodeJS",
-      level: 35,
+      level: 80,
     },
   ];
 
@@ -45,6 +76,11 @@ export default function setUpProfile() {
     },
     {
       id: 0,
+      skill: "NodeJs",
+      img: "https://w7.pngwing.com/pngs/452/24/png-transparent-js-logo-node-logos-and-brands-icon.png",
+    },
+    {
+      id: 0,
       skill: "vueJS",
       img: "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg",
     },
@@ -56,7 +92,7 @@ export default function setUpProfile() {
     {
       id: 0,
       skill: "Geoserver",
-      img: "https://cartologic.com/img/Cartoview-product/GeoServer.png",
+      img: "https://avatars.githubusercontent.com/u/186522?s=280&v=4",
     },
     {
       id: 0,
@@ -119,79 +155,88 @@ export default function setUpProfile() {
   const projectsData = [
     {
       id: 0,
-      img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1654254851/portfolio/2022-06-03_14-12_htfoh1.png",
+      // img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1654254851/portfolio/2022-06-03_14-12_htfoh1.png",
+      img: greenpulse,
+      title: "EarthPulse",
+      info: "",
+      info2:
+        "Agricultural statistics dashboard that provides the statistical breakdown of crop types at National, county and subcounty level in Kenya. The seasonal croptype maps are based on data produced by the Copernicus4GEOGLAM service of Copernicus Global Land in various countries: ",
+      url: "",
+      repo: "", //if no repo, the button should not show
+      stack: ["VueJS", "NodeJS", "Python", "Django", "EarthEngine"]
+
+    },
+    {
+      id: 0,
+      // img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1654254851/portfolio/2022-06-03_14-12_htfoh1.png",
+      img: agristatsPic,
       title: "AgristatsKE",
       info: "",
       info2:
         "Agricultural statistics dashboard that provides the statistical breakdown of crop types at National, county and subcounty level in Kenya. The seasonal croptype maps are based on data produced by the Copernicus4GEOGLAM service of Copernicus Global Land in various countries: ",
       url: "",
       repo: "", //if no repo, the button should not show
+      stack: ["VueJS", "NodeJS", "Python", "Django", "EarthEngine"]
     },
     {
       id: 1,
-      img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1654254599/portfolio/2022-06-03_14-04_xdoipt.png",
+      img: mislandNorthAfrica,
       title: "MISLAND",
       info: "",
       info2:
         "Decision Support System(DSS) utilizing earth observation data to deliver information, promote awareness and, aid in decision making toward realizing Land Degradation Neutrality (LDN) in six OSS North Africa action zone Algeria, Egypt, Libya, Tunisia, Morocco, and Mauritania",
       url: "",
       repo: "", //if no repo, the button should not show
+      stack: ["VueJS", "NodeJS", "Python", "Django", "EarthEngine"]
     },
     {
       id: 2,
-      img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1654255385/portfolio/2022-06-03_14-22_hruddm.png",
+      img: forestMask,
       title: "Forest Mask Generotor",
-      info: "Nothing here",
+      info: "",
       info2:
         "This application allows you to generate forest areas based on the NDVI CV method. Users can set thresholds for the tree cover percentage and to rapidly forest cover maps for differet years form 1990 to 2020",
       url: "",
       repo: "", //if no repo, the button should not show
+      stack: ["VueJS", "NodeJS", "Python", "Django", "EarthEngine"]
     },
     {
       id: 0,
-      img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1654257445/portfolio/2022-06-03_14-56_fxvxn6.png",
-      title: "SAR Forestmonitor",
-      info: "Web development",
+      img: sarImg,
+      title: "SAR ForestMonitor",
+      info: "",
       info2:
         "This app allows you to perform change detection on Selected Tropical Forests Using SENTINEL-1 GRD data. Users can set the area of interest, the date ranges for the before and afeter SENTINEL-1 images. The application is designed for advanced users with knowledge in SAR data processing ",
       url: "",
       repo: "", //if no repo, the button should not show
+      stack: ["VueJS", "NodeJS", "Python", "Django", "EarthEngine"]
     },
-    // {
-    //   id: 1,
-    //   img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1654254599/portfolio/2022-06-03_14-04_xdoipt.png",
-    //   title: "MISLAND",
-    //   info: "Remote Sensing",
-    //   info2:
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    //   url: "",
-    //   repo: "", //if no repo, the button should not show
-    // },
-    // {
-    //   id: 2,
-    //   img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1654255385/portfolio/2022-06-03_14-22_hruddm.png",
-    //   title: "Planetary Sceince",
-    //   info: "Nothing here",
-    //   info2:
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    //   url: "",
-    //   repo: "", //if no repo, the button should not show
-    // },
+    {
+      id: 0,
+      img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1655826199/portfolio/geonode_kc0sna.png",
+      title: "Opendata Geoportal",
+      info: "",
+      info2:
+        "GeoNode is a web-based application and platform for developing geospatial information systems (GIS) and for deploying spatial data infrastructures (SDI). It is designed to be extended and modified, and can be integrated into existing platforms.",
+      url: "",
+      repo: "", //if no repo, the button should not show
+      stack: ["VueJS", "NodeJS", "Python", "Django", "EarthEngine"]
+    },
   ];
 
   //BLOGS AND POSTS
   const blogsData = [
     {
-      img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1654421760/portfolio/2022-06-05_12-19_hurd5o.png",
+      img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1655828263/portfolio/shiptraffic_xr3zsp.jpg",
       title: "Ship detection using Sentinel 1",
       text: "",
       url: "https://geodexter.hashnode.dev/after-the-ever-given",
     },
     {
-      img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1654421760/portfolio/2022-06-05_12-19_hurd5o.png",
-      title: "Sample Title",
+      img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1655827385/portfolio/tutorials_httdn1.jpg",
+      title: "Google Earth Engine Course",
       text: "",
-      url: "",
+      url: "http://steaearthenginetutorials.readthedocs.io/en/latest/",
     },
     {
       img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1654421760/portfolio/2022-06-05_12-19_hurd5o.png",
@@ -233,5 +278,6 @@ export default function setUpProfile() {
     skillsData,
     blogsData,
     codingSkills,
+    codingSkillsmobile,
   };
 }

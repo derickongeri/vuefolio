@@ -1,6 +1,6 @@
 <template>
   <div class="q-pa-md row items-center justify-center q-gutter-lg">
-    <div v-for="(post, id) in posts" :key="id" class="text-box">
+    <div v-for="(post, id) in posts" :key="id" class="text-box" data-aos="zoom-in">
       <div class="web-card" style="min-width: 20vw">
         <q-card class="my-card">
           <q-img :src="post.img">
@@ -11,23 +11,22 @@
           </q-img>
 
           <q-card-actions>
-            <q-btn flat>Read More</q-btn>
+            <a :href="post.url" class="text-grey"><q-btn flat no-caps><div class="text-box">Link</div></q-btn></a>
           </q-card-actions>
         </q-card>
       </div>
 
-      <div class="mobile-card">
+      <div class="mobile-card" style="min-width: 90vw">
         <q-card class="my-card">
-          <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
+          <q-img :src="post.img">
             <div class="absolute-bottom">
-              <div class="text-h6">Our Changing Planet</div>
-              <div class="text-subtitle2">by John Doe</div>
+              <div class="text-h6"><strong>{{post.title}}</strong></div>
+              <div class="text-subtitle2 text-white">by John Doe</div>
             </div>
           </q-img>
 
           <q-card-actions>
-            <q-btn flat>Action 1</q-btn>
-            <q-btn flat>Action 2</q-btn>
+            <a :href="post.url" class="text-grey"><q-btn flat no-caps><div class="text-box">Link</div></q-btn></a>
           </q-card-actions>
         </q-card>
       </div>

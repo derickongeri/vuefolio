@@ -2,7 +2,7 @@
 
   <div class="text-box q-pa-md row justify-around q-gutter-xl">
     <div v-for="(skill, key) in skills" :key="key">
-      <div class="col text-center q-px-sm">
+      <div class="col text-center q-px-sm" data-aos="fade-left">
         <div class="row justify-center q-pa-sm">
           <img :src="skill.img" style="width: 50px;height: 50px;" />
         </div>

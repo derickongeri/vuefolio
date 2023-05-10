@@ -1,10 +1,17 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated class="header text-grey-9">
+    <q-header elevated class="header">
       <q-toolbar class="tabs-web">
-        <div style="width: 10vw"></div>
-        <q-toolbar-title>
-          <div class="logo-web">
+        <div style="width:14%"></div>
+        <q-toolbar-title >
+          <div class="logo-web" v-if="darkMode">
+            <img
+              src="~/src/assets/deric-logo-light.svg"
+              alt=""
+              style="width: 200px"
+            />
+          </div>
+          <div class="logo-web" v-else>
             <img
               src="~/src/assets/deric-logo.svg"
               alt=""
@@ -13,28 +20,55 @@
           </div>
         </q-toolbar-title>
 
-        <div class="text-black">
-          <div class="row q-gutter-md">
+        <div>
+          <div class="row q-gutter-md" style="font-weight:1400; font-size:16px">
             <div name="Home" label="">
-              <div class="text-content"> <a href="#hero"> <div>Home</div></a></div>
+              <div class="text-content">
+                <a href="#hero">
+                  <div class="text-grey-4" v-if="darkMode">Home</div>
+                  <div v-else>Home</div></a
+                >
+              </div>
             </div>
             <div name="About" label="">
-              <div class="text-content"><a href="#about">About</a></div>
+              <div class="text-content">
+                <a href="#about">
+                  <div class="text-grey-4" v-if="darkMode">About</div>
+                  <div v-else>About</div></a
+                >
+              </div>
             </div>
             <div name="Projects" label="">
-              <div class="text-content"><a href="#projects">Projects</a></div>
+              <div class="text-content">
+                <a href="#projects">
+                  <div class="text-grey-4" v-if="darkMode">Projects</div>
+                  <div v-else>Projects</div>
+                </a>
+              </div>
             </div>
             <div name="Contacts" label="">
-              <div class="text-content"> <a href="#contacts">Contacts</a></div>
+              <div class="text-content">
+                <a href="#contacts">
+                  <div class="text-grey-4" v-if="darkMode">Contacts</div>
+                  <div v-else>Contacts</div></a
+                >
+              </div>
             </div>
-            <div style="width: 17vw"></div>
+            <div style="width: 16vw"></div>
           </div>
         </div>
       </q-toolbar>
 
       <q-toolbar class="tabs-mobile">
         <q-toolbar-title>
-          <div class="logo-web q-pa-sm">
+          <div class="logo-web q-pa-sm" v-if="darkMode">
+            <img
+              src="~/src/assets/deric-logo-light.svg"
+              alt=""
+              style="width: 150px"
+            />
+          </div>
+          <div class="logo-web q-pa-sm" v-else>
             <img
               src="~/src/assets/deric-logo.svg"
               alt=""
@@ -44,97 +78,108 @@
         </q-toolbar-title>
 
         <div class="text-black">
-          <q-btn flat round color="grey-10" icon="menu" />
+          <q-btn flat round color="grey-6" icon="menu">
+            <q-menu anchor="bottom left" self="top left" :offset="[0, 8]">
+              <q-list style="min-width: 95vw">
+                <q-item clickable>
+                  <q-item-section
+                    ><a href="#hero">
+                      <div class="text-grey-4" v-if="darkMode">Home</div>
+                      <div v-else>Home</div></a
+                    ></q-item-section
+                  >
+                </q-item>
+                <q-item clickable>
+                  <q-item-section>
+                    <a href="#about">
+                      <div class="text-grey-4" v-if="darkMode">About</div>
+                      <div v-else>About</div></a
+                    ></q-item-section
+                  >
+                </q-item>
+                <q-item clickable>
+                  <q-item-section>
+                    <a href="#projects">
+                      <div class="text-grey-4" v-if="darkMode">Projects</div>
+                      <div v-else>Projects</div>
+                    </a></q-item-section
+                  >
+                </q-item>
+                <q-item clickable>
+                  <q-item-section>
+                    <a href="#contacts">
+                      <div class="text-grey-4" v-if="darkMode">Contacts</div>
+                      <div v-else>Contacts</div></a
+                    ></q-item-section
+                  >
+                </q-item>
+              </q-list>
+            </q-menu>
+          </q-btn>
         </div>
       </q-toolbar>
     </q-header>
 
-    <q-page-container class="bg-grey-1">
+    <q-page-container class="" style="">
       <router-view />
+      <q-page-sticky position="bottom-right" :offset="[18, 18]">
+        <div>
+          <q-toggle
+            v-model="darkMode"
+            checked-icon="mdi-weather-night"
+            color="grey-9"
+            unchecked-icon="mdi-white-balance-sunny"
+            size="xl"
+          />
+        </div>
+      </q-page-sticky>
     </q-page-container>
   </q-layout>
 </template>
 
 <script>
-import { defineComponent, ref } from "vue";
-import EssentialLink from "components/EssentialLink.vue";
-
-const linksList = [
-  {
-    title: "Docs",
-    caption: "quasar.dev",
-    icon: "school",
-    link: "https://quasar.dev",
-  },
-  {
-    title: "Github",
-    caption: "github.com/quasarframework",
-    icon: "code",
-    link: "https://github.com/quasarframework",
-  },
-  {
-    title: "Discord Chat Channel",
-    caption: "chat.quasar.dev",
-    icon: "chat",
-    link: "https://chat.quasar.dev",
-  },
-  {
-    title: "Forum",
-    caption: "forum.quasar.dev",
-    icon: "record_voice_over",
-    link: "https://forum.quasar.dev",
-  },
-  {
-    title: "Twitter",
-    caption: "@quasarframework",
-    icon: "rss_feed",
-    link: "https://twitter.quasar.dev",
-  },
-  {
-    title: "Facebook",
-    caption: "@QuasarFramework",
-    icon: "public",
-    link: "https://facebook.quasar.dev",
-  },
-  {
-    title: "Quasar Awesome",
-    caption: "Community Quasar projects",
-    icon: "favorite",
-    link: "https://awesome.quasar.dev",
-  },
-];
+import { defineComponent, ref, watch, provide } from "vue";
+import { useQuasar } from "quasar";
 
 export default defineComponent({
   name: "MainLayout",
 
-  components: {
-    EssentialLink,
-  },
+  // components: {
+  //   darkMode: require("src/components/darkMode.vue").default,
+  // },
 
   setup() {
-    const leftDrawerOpen = ref(false);
+    const $q = useQuasar();
+    const darkMode = ref(false);
+
+    watch(darkMode, (darkMode) => {
+      $q.dark.set(darkMode);
+    });
+
+    provide("darkMode", { darkMode });
 
     return {
-      essentialLinks: linksList,
-      leftDrawerOpen,
-      toggleLeftDrawer() {
-        leftDrawerOpen.value = !leftDrawerOpen.value;
-      },
+      darkMode,
     };
   },
 });
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Finger+Paint&family=Raleway:wght@200&family=Roboto:ital,wght@0,100;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Finger+Paint&family=Raleway:wght@200&family=Roboto:ital,wght@0,100,400,700;1,100&display=swap");
+
+/* * {
+  outline: 1px solid green !important;
+  background-color: rgba(0, 128, 0, 0.336);
+} */
 
 a:link {
-  color: #212121;
+  /* color: #212121; */
   background-color: transparent;
   text-decoration: none;
 }
 a:visited {
-  color: #212121;;
+  color: #212121;
   background-color: transparent;
   text-decoration: none;
 }
@@ -150,16 +195,20 @@ a:active {
   text-decoration: underline;
 }
 
-
 .header {
   background-color: #0000001f;
   -webkit-backdrop-filter: blur(7px);
   backdrop-filter: blur(7px);
+  max-width: 100vw;
 }
 
 .text-content {
   font-family: "Raleway", sans-serif;
   font-weight: 200;
+}
+
+body.body--dark {
+  background: #212121;
 }
 
 @media screen and (max-width: 768px) {
