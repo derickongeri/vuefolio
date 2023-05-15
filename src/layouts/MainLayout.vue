@@ -166,7 +166,6 @@ export default defineComponent({
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Finger+Paint&family=Raleway:wght@200&family=Roboto:ital,wght@0,100,400,700;1,100&display=swap");
 
 /* * {
   outline: 1px solid green !important;

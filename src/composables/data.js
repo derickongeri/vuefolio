@@ -1,9 +1,8 @@
-import agristatsPic from "src/assets/agristats.png"
-import mislandNorthAfrica from "src/assets/mislandNorthAfrica.png"
-import forestMask from "src/assets/forestmask.png"
-import sarImg from "src/assets/sar.png"
-import greenpulse from "src/assets/greenpulse.png"
-
+import agristatsPic from "src/assets/agristats.png";
+import mislandNorthAfrica from "src/assets/mislandNorthAfrica.png";
+import forestMask from "src/assets/forestmask.png";
+import sarImg from "src/assets/sar.png";
+import greenpulse from "src/assets/greenpulse.png";
 
 export default function setUpProfile() {
   // ABOUT DATA
@@ -12,6 +11,46 @@ export default function setUpProfile() {
     paragraphTwo: "",
     paragraphThree: "",
   };
+
+  const workExperienceData = [
+    {
+      year: "2023",
+      company: "LocateIT Kenya",
+      position: "Technical Lead GIT",
+      summary:
+        "Design and develop cutting-edge applications, leveraging my expertise in geospatial analysis, and data visualization tools. With a strong focus on frontend development and UI/UX design, I guide the technical team to craft highly interactive web platforms for spatial data analysis. Additionally, I contribute to capacity building through technical documentation, user guides, trainings, and coordinating research and development efforts for the tech team.",
+      gainedSkills: [
+        "Geospatial",
+        "Web Development",
+        "UI/UX",
+        "Documentation",
+        "Training",
+      ],
+    },
+    {
+      year: "2019",
+      company: "Dalberg Research - Location Analytics (LOCAN)",
+      position: "Database Developer",
+      summary:
+        "Contracted to oversee the transfer of database files between cloud and on-premise servers, curate, document, and archive data for the Location Analytics team, and establish standard operating procedures (SOP) for data curation and archiving.",
+      gainedSkills: [
+        "Database management",
+        "Data curation","documentation",
+      ],
+    },
+    {
+      year: "2019",
+      company: "Regional Center for Mapping of Resources For Development - RCMRD",
+      position: "GIS/Remote Sensing Analyst",
+      summary:
+        "Obtaining satellite imagery and relevant data, process it for analysis, and utilize statistical methods, machine learning algorithms, and geospatial analysis techniques to identify patterns and trends in land degradation. Developed land degradation models using process-based models and remote sensing algorithms. Additionally, I provided cartographic maps, statistics, and summary reports of land degradation trends in Kenya",
+      gainedSkills: [
+        "Database management and administration",
+        "Data curation and documentation",
+        "Database development",
+      ],
+    },
+  ];
 
   // PROGRAMMING SKILLS
   const codingSkills = [
@@ -64,6 +103,16 @@ export default function setUpProfile() {
   // SKILLS DATA
 
   const skillsData = [
+    // {
+    //   id: 0,
+    //   skill: "HTML5",
+    //   img: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+    // },
+    // {
+    //   id: 0,
+    //   skill: "CSS3",
+    //   img: "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
+    // },
     {
       id: 0,
       skill: "javaScript",
@@ -96,6 +145,16 @@ export default function setUpProfile() {
     },
     {
       id: 0,
+      skill: "PostgreSQL/Postgis",
+      img: "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg",
+    },
+    {
+      id: 0,
+      skill: "Openlayers",
+      img: "https://upload.wikimedia.org/wikipedia/commons/6/67/OpenLayers_logo.svg",
+    },
+    {
+      id: 0,
       skill: "Qgis",
       img: "https://upload.wikimedia.org/wikipedia/commons/3/3e/QGIS_logo_minimal.svg",
     },
@@ -104,11 +163,11 @@ export default function setUpProfile() {
       skill: "ArcGIS",
       img: "https://www.kindpng.com/picc/m/437-4376373_transparent-arcgis-logo-png-arcgis-pro-logo-png.png",
     },
-    {
-      id: 0,
-      skill: "Supabase",
-      img: "https://res.cloudinary.com/practicaldev/image/fetch/s---1zZlXx3--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/1968/c0dbe341-1d94-4192-a93b-921519678894.png",
-    },
+    // {
+    //   id: 0,
+    //   skill: "Supabase",
+    //   img: "https://res.cloudinary.com/practicaldev/image/fetch/s---1zZlXx3--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/1968/c0dbe341-1d94-4192-a93b-921519678894.png",
+    // },
     {
       id: 0,
       skill: "google earth Engine",
@@ -124,31 +183,11 @@ export default function setUpProfile() {
       skill: "AdobeXD",
       img: "https://upload.wikimedia.org/wikipedia/commons/c/c2/Adobe_XD_CC_icon.svg",
     },
-    {
-      id: 0,
-      skill: "HTML5",
-      img: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
-    },
-    {
-      id: 0,
-      skill: "CSS3",
-      img: "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
-    },
-    {
-      id: 0,
-      skill: "PostgreSQL/Postgis",
-      img: "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg",
-    },
-    {
-      id: 0,
-      skill: "Openlayers",
-      img: "https://upload.wikimedia.org/wikipedia/commons/6/67/OpenLayers_logo.svg",
-    },
-    {
-      id: 0,
-      skill: "GrassGIS",
-      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Grass_GIS.svg/1200px-Grass_GIS.svg.png",
-    },
+    // {
+    //   id: 0,
+    //   skill: "GrassGIS",
+    //   img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Grass_GIS.svg/1200px-Grass_GIS.svg.png",
+    // },
   ];
 
   // PROJECTS DATA
@@ -158,69 +197,68 @@ export default function setUpProfile() {
       // img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1654254851/portfolio/2022-06-03_14-12_htfoh1.png",
       img: greenpulse,
       title: "EarthPulse",
-      info: "",
+      info: "Earth Observation Dashboard",
       info2:
-        "Agricultural statistics dashboard that provides the statistical breakdown of crop types at National, county and subcounty level in Kenya. The seasonal croptype maps are based on data produced by the Copernicus4GEOGLAM service of Copernicus Global Land in various countries: ",
-      url: "",
+        "Use Earth Observation data to monitor and track environmental changes, helping you stay informed about our planet's health",
+      url: "http://derickongeri.com/greenpulse",
       repo: "", //if no repo, the button should not show
-      stack: ["VueJS", "NodeJS", "Python", "Django", "EarthEngine"]
-
+      stack: ["VueJS", "NodeJS", "EarthEngine"],
     },
     {
-      id: 0,
+      id: 1,
       // img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1654254851/portfolio/2022-06-03_14-12_htfoh1.png",
       img: agristatsPic,
       title: "AgristatsKE",
       info: "",
       info2:
-        "Agricultural statistics dashboard that provides the statistical breakdown of crop types at National, county and subcounty level in Kenya. The seasonal croptype maps are based on data produced by the Copernicus4GEOGLAM service of Copernicus Global Land in various countries: ",
-      url: "",
+        "Agricultural statistics dashboard. Provides the statistical breakdown of crop types at National, county and subcounty level in Kenya.",
+      url: "http://derickongeri.com/agristats",
       repo: "", //if no repo, the button should not show
-      stack: ["VueJS", "NodeJS", "Python", "Django", "EarthEngine"]
+      stack: ["VueJS", "NodeJS", "Python", "Django", "EarthEngine"],
     },
     {
-      id: 1,
+      id: 3,
       img: mislandNorthAfrica,
-      title: "MISLAND",
+      title: "Misland",
       info: "",
       info2:
-        "Decision Support System(DSS) utilizing earth observation data to deliver information, promote awareness and, aid in decision making toward realizing Land Degradation Neutrality (LDN) in six OSS North Africa action zone Algeria, Egypt, Libya, Tunisia, Morocco, and Mauritania",
-      url: "",
+        "Decision Support System(DSS) utilizing earth observation data to deliver information on Land Degradation Neutrality (LDN) in North Africa",
+      url: "http://misland.oss-online.org/",
       repo: "", //if no repo, the button should not show
-      stack: ["VueJS", "NodeJS", "Python", "Django", "EarthEngine"]
+      stack: ["VueJS", "Python", "Django", "EarthEngine"],
     },
     {
-      id: 2,
+      id: 4,
       img: forestMask,
-      title: "Forest Mask Generotor",
+      title: "ForestMapper",
       info: "",
       info2:
-        "This application allows you to generate forest areas based on the NDVI CV method. Users can set thresholds for the tree cover percentage and to rapidly forest cover maps for differet years form 1990 to 2020",
-      url: "",
+        "Generate forest areas based on the NDVI CV method. Users can set thresholds for the tree cover percentage and to generate forest cover maps",
+      url: "https://derickongeri.users.earthengine.app/view/forestmaskapp",
       repo: "", //if no repo, the button should not show
-      stack: ["VueJS", "NodeJS", "Python", "Django", "EarthEngine"]
+      stack: ["Javascript", "EarthEngine"],
     },
     {
-      id: 0,
+      id: 4,
       img: sarImg,
-      title: "SAR ForestMonitor",
+      title: "ForestSAR",
       info: "",
       info2:
-        "This app allows you to perform change detection on Selected Tropical Forests Using SENTINEL-1 GRD data. Users can set the area of interest, the date ranges for the before and afeter SENTINEL-1 images. The application is designed for advanced users with knowledge in SAR data processing ",
-      url: "",
+        "Monitor forest changes on selected tropical Forests Using SENTINEL-1 GRD data. Users can set the area of interest, the date ranges for the before and afeter SENTINEL-1 images.",
+      url: "https://derickongeri.users.earthengine.app/view/sar-forest-monitoring-tool",
       repo: "", //if no repo, the button should not show
-      stack: ["VueJS", "NodeJS", "Python", "Django", "EarthEngine"]
+      stack: ["JavaScript", "EarthEngine"],
     },
     {
-      id: 0,
+      id: 5,
       img: "https://res.cloudinary.com/dv3id0zrx/image/upload/v1655826199/portfolio/geonode_kc0sna.png",
-      title: "Opendata Geoportal",
+      title: "GeoNode",
       info: "",
       info2:
-        "GeoNode is a web-based application and platform for developing geospatial information systems (GIS) and for deploying spatial data infrastructures (SDI). It is designed to be extended and modified, and can be integrated into existing platforms.",
+        "A web-based application and platform for developing geospatial information systems (GIS) and for deploying spatial data infrastructures (SDI).",
       url: "",
       repo: "", //if no repo, the button should not show
-      stack: ["VueJS", "NodeJS", "Python", "Django", "EarthEngine"]
+      stack: ["GeoNode", "Python", "Django"],
     },
   ];
 
@@ -279,5 +317,6 @@ export default function setUpProfile() {
     blogsData,
     codingSkills,
     codingSkillsmobile,
+    workExperienceData
   };
 }

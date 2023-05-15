@@ -18,24 +18,25 @@
     </div>
   </div>
 
-  <div class="skill-level col-6 text-center q-pa-md">
+  <div class="skill-level col-6 text-left q-pa-md">
     <div
       v-for="(skill, id) in skills"
       :key="id"
-      class="row item-center q-px-xl"
+      class="text-box row item-center q-px-xl"
     >
-      <div class="col-2 q-pa-md text-box" data-aos="fade-right" style="font-weight:bold">
-        {{ skill.language }}
-      </div>
-      <!-- <q-space /> -->
-      <div class="col q-pa-md">
-        <q-linear-progress
-          rounded
-          size="10px"
-          :value="skill.level"
-          data-aos="fade-right"
-        />
-      </div>
+
+
+      <q-item>
+        <q-item-section side top>
+          <q-item-label class="text-primary" caption style="font-weight:bold">2018 - now</q-item-label>
+        </q-item-section>
+
+        <q-item-section>
+          <q-item-label overline>LocateIT Kenya Limited</q-item-label>
+          <q-item-label>Tenchincal Lead GIS & Remote Sesnsing</q-item-label>
+          <q-item-label caption class="text-justify">Secondary line text. Lorem ipsum dolor sit amet, consectetur adipiscit elit.Secondary line text. Lorem ipsum dolor sit amet, consectetur adipiscit elit.Secondary line text. Lorem ipsum dolor sit amet, consectetur adipiscit elit.</q-item-label>
+        </q-item-section>
+      </q-item>
 
       <!-- <q-circular-progress
 

@@ -15,17 +15,20 @@
             <div class="q-my-none q-py-none" style="min-width: 35vw">
               <h1
                 class="head-text text-grey-5 q-my-none q-py-none"
-                style="font-size: 5em"
+                style="font-family: Finger Paint, cursive; font-size: 5em"
               >
                 Derick Ongeri
               </h1>
 
               <div class="">
-                <div class="text-left q-px-xs">
+                <div
+                  class="text-left text-grey-5 q-px-xs"
+                  style="font-weight: bold; font-size: 16px"
+                >
                   <typewriter
                     title="I am a "
                     :words="[
-                      ' Geospatial Data Analyst',
+                      ' Geospatial Analyst',
                       ' Web Developer',
                       ' Remote Sensing Expert',
                     ]"
@@ -154,16 +157,25 @@
                   <typewriter
                     title="A "
                     :words="[
-                      ' Geospatial Applications Expert',
-                      ' Web Developer',
+                      ' Geospatial Analyst',
                       ' Remote Sensing Expert',
+                      ' Fullstack Developer',
                     ]"
                   ></typewriter>
                 </div>
               </div>
-              <div class="row justify-start q-px-xs q-gutter-sm">
-                <q-btn flat round color="grey-9" size="16px" icon="mail" />
-                <q-btn
+
+              <div class="row justify-start q-px-none q-py-md q-gutter-sm">
+                <a href="#projects">
+                  <q-btn
+                    unelevated
+                    rounded
+                    label="My Work"
+                    color="primary"
+                    size="16px"
+                    icon-right="mdi-arrow-right-thin"
+                /></a>
+                <!-- <q-btn
                   flat
                   round
                   color="grey-9"
@@ -183,7 +195,7 @@
                   color="grey-9"
                   size="16px"
                   icon="mdi-twitter"
-                />
+                /> -->
               </div>
             </div>
           </div>
@@ -259,15 +271,14 @@
       </div>
     </div>
 
-    <div class="projects-section bg-grey-2" id="projects">
+    <div class="projects-section q-mt-xl" id="projects">
       <div class="col q-gutter-md justify-center">
-        <div class="row items-center q-gutter-xl">
-          <div style="width:7vw"></div>
+        <div class="row items-center justify-center q-gutter-xl">
           <h1
             class="q-my-none q-py-lg"
             style="font-family: Finger Paint, cursive; font-size: 3em"
           >
-            MY WORK
+            PORTFOLIO
           </h1>
         </div>
         <div class="q-pa-md" data-aos="fade-up">
@@ -282,20 +293,20 @@
         style="font-family: Finger Paint, cursive; font-size: 3em"
         data-aos="fade-up"
       >
-        SKILLS
+        MY SKILLS AND EXPERIENCE
       </h1>
       <div class="row items-center q-pa-lg">
         <div class="col-6 text-center q-pa-md">
           <h5 style="font-family: Finger Paint, cursive; font-size: 1.5em">
-            Programming
+            Skills
           </h5>
-          <programmingSkills />
+          <skills data-aos="fade-up"></skills>
         </div>
         <div class="col-6 text-center q-pa-md">
           <h5 style="font-family: Finger Paint, cursive; font-size: 1.5em">
-            Application stacks & tools
+            Experience
           </h5>
-          <skills data-aos="fade-up"></skills>
+          <workExperience/>
         </div>
       </div>
     </div>
@@ -310,59 +321,7 @@
           ABOUT ME
         </h1>
       </div>
-      <div class="row q-ma-lg q-gutter-md q-py-md justify-center items-start">
-        <div
-          class="col-6 text-center"
-          data-aos="fade-right"
-          style="max-width: 35%"
-        >
-          <transition
-            appear
-            enter-active-class="animated slide-right"
-            leave-active-class="animated fadeOut"
-          >
-            <img
-              src="~/src/assets/profile-pic3.png"
-              alt=""
-              style="max-width: 25vw"
-            />
-          </transition>
-        </div>
-
-        <div
-          class="col-6 text-center bg-grey-2 q-pa-md"
-          data-aos="fade-left"
-          style="max-width: 35%; border-radius: 15px"
-        >
-          <p class="text-box" style="font-size: 21px">
-            <strong>Creative.Adaptable.Resilient.</strong>
-          </p>
-          <p class="text-box" style="font-size: 16px">
-            <strong>A</strong> GIS <strong>developer based in</strong> Nairobi,
-            Kenya
-          </p>
-          <p class="text-box">
-            I am a highly experienced GIS and Remote Sensing analyst and web
-            developer with a strong passion for using earth observation and
-            geospatial technologies, process automation, and software
-            development to address the challenges of sustainable development.
-          </p>
-          <p class="text-box">
-            I possess a wealth of technical skills in web and GIS database
-            management, data analysis and visualization, API design and system
-            deployment, as well as scripting and workflow automation. I am known
-            for my creativity and have provided imaginative solutions for
-            several clients, both individually and as part of a team. I am
-            proficient in programming languages such as JavaScript and Python,
-            and I actively contribute to numerous open source projects as a
-            strong advocate of open science and reproducible research.
-          </p>
-          <p class="text-box">
-            Additionally, I am a certified Qgis instructor and have extensive
-            knowledge of ESRI ArcGIS and ArcMap.
-          </p>
-        </div>
-      </div>
+      <aboutme/>
     </div>
     <div class="about-section-mobile" style="width: 100vw" data-aos="fade-up">
       <div class="col q-ma-md q-pa-md justify-center">
@@ -597,6 +556,8 @@ export default defineComponent({
     skills: require("src/components/skills.vue").default,
     contactform: require("src/components/contactform.vue").default,
     programmingSkills: require("src/components/programming.vue").default,
+    workExperience: require("src/components/workexperience.vue").default,
+    aboutme: require("src/components/about.vue").default,
     Tweet,
   },
 
